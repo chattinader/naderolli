@@ -2,7 +2,6 @@
 import fs from 'fs';
 import path from 'path';
 import Head from 'next/head';
-import '@/style.css';
 import { useEffect, useRef, useState } from 'react';
 
 export async function getServerSideProps({ query }) {
