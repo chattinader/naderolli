@@ -1,0 +1,143 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./public/BackgroundGradient.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    color: white;
+    text-align: center;
+}
+
+.wrapper {
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 2rem;
+}
+
+.logo {
+    width: 8rem;
+    height: 8rem;
+    margin-inline: auto;
+    background-image: url('./public/Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    box-shadow: 0 0 1rem .25rem rgba(0,0,0,.7);
+}
+
+form {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+    place-content: center;
+    gap: 1rem;
+    box-shadow: 0 0 1rem .25rem rgba(0, 0, 0, .7);
+    width: fit-content;
+    padding: 4rem;
+    border-radius: .5rem;
+    margin-inline: auto;
+}
+
+form:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: .5rem;
+}
+
+form:before {
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, .2);
+}
+
+form {
+    background: inherit;
+}
+
+form:before {
+    background: inherit;
+}
+
+input {
+    width: 20rem;
+    padding: 1rem .5rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1rem;
+    z-index: 1;
+}
+
+.button {
+    width: 100%;
+    margin-inline: auto;
+    padding: 1rem .5rem;
+    outline: none;
+    border : none;
+    border-radius: .5rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 16/9;
+    margin-inline: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.videoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mask-image: url('./public/CamOverlayRectMask.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    z-index: 5;
+}
+
+.videoPlayer {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 0 0 1rem .25rem rgba(255, 255, 255, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
