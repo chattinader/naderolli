@@ -65,3 +65,5 @@ export default async function handler(req, res) {
 
     res.status(200).json(videoData);
 }
+
+export const runtime = 'experimental-edge';
