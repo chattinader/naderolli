@@ -1,7 +1,7 @@
 // pages/index.js
 import { useEffect } from 'react';
 import Router from 'next/router';
-import '../style.css';
+import '@/style.css';
 
 const IndexPage = () => {
     useEffect(() => {
