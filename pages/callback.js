@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Router from 'next/router';
-import '../style.css';
+import '@/style.css';
 
 const CallbackPage = () => {
     const [videoName, setVideoName] = useState('');
